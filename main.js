@@ -9,7 +9,7 @@ function calculator() {
     else if (e.target.innerHTML === '=') {
       input.value = eval(input.value);
       let newHistory = document.createElement('p');
-      newHistory.innerHTML = `&nbsp;${input.value}&nbsp;||&nbsp;`;
+      newHistory.innerHTML = `${input.value}`;
       calcHistory.append(newHistory);
     } else if (e.target.innerHTML === 'C') {
       input.value = input.value.slice(0, -1);
